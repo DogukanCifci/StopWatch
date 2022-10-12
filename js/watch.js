@@ -11,7 +11,7 @@ let second = 0;
 let minutes = 0;
 
 image.addEventListener("click", () => {
-  if (image.src == "http://127.0.0.1:5500/images/start1.png") {
+  if (image.src == "../images/start1.png") {
     image.src = "../images/pause.png";
     milisecondsSayac = setInterval(() => {
       miliseconds++;
@@ -22,7 +22,7 @@ image.addEventListener("click", () => {
       pressDisplay(secondSayac);
     }, 1000);
   } else {
-    image.src = "http://127.0.0.1:5500/images/start1.png";
+    image.src = "../images/start1.png";
     clearInterval(milisecondsSayac);
     clearInterval(secondSayac);
   }
