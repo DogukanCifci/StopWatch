@@ -23,12 +23,16 @@ h1 {
   color: rgb(128, 14, 14);
 }
 
-.start-stop img:first-child {
+.images img:first-child {
   width: 80px;
   vertical-align: middle;
   margin-right: 30px;
 }
-.start-stop img:nth-child(2) {
+.images img:nth-child(2) {
   width: 105px;
   vertical-align: middle;
+}
+
+img:hover {
+  cursor: pointer;
 }
