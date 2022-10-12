@@ -6,10 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stop Watch</title>
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <h1>STOP WATCH</h1>
+      <div class="icon">
+        <lord-icon
+          src="https://cdn.lordicon.com/uutnmngi.json"
+          trigger="hover"
+          colors="primary:brown,secondary:white"
+          stroke="80"
+          scale="55"
+          style="width: 450px; height: 250px"
+        >
+        </lord-icon>
+      </div>
       <div class="display">
         <span class="minutes"> 00</span> : <span class="seconds"> 00</span> :
         <span class="miliseconds"> 00</span>
@@ -21,6 +44,8 @@
         </div>
       </div>
     </div>
+
+    <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
     <script src="js/watch.js"></script>
   </body>
 </html>
