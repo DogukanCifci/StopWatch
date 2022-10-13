@@ -1,5 +1,7 @@
 //start-stop resimlerin tiklandiginda degismesi
-const image = document.querySelector("img.start-stop");
+const image = document.querySelector("img.start");
+console.log(image);
+console.log(image.src);
 const imageReset = document.querySelector("img.reset");
 const milisecondsDisplay = document.querySelector("span.miliseconds");
 const secondDisplay = document.querySelector("span.seconds");
@@ -10,9 +12,11 @@ let miliseconds = 0;
 let second = 0;
 let minutes = 0;
 
-image.addEventListener("click", () => {
-  if (image.src == "../images/start1.png") {
-    image.src = "../images/pause.png";
+image.addEventListener("click", () => control());
+
+function control() {
+  if (image.src == "http://127.0.0.1:5500/images/start1.png") {
+    image.src = "http://127.0.0.1:5500/images/pause.png";
     milisecondsSayac = setInterval(() => {
       miliseconds++;
       pressDisplay(milisecondsSayac);
@@ -22,12 +26,11 @@ image.addEventListener("click", () => {
       pressDisplay(secondSayac);
     }, 1000);
   } else {
-    image.src = "../images/start1.png";
+    image.src = "http://127.0.0.1:5500/images/start1.png";
     clearInterval(milisecondsSayac);
     clearInterval(secondSayac);
   }
-});
-
+}
 function pressDisplay() {
   if (miliseconds == 100) {
     milisecondsDisplay.textContent = "00";
