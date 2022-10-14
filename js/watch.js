@@ -26,7 +26,7 @@ function control() {
       pressDisplay(secondSayac);
     }, 1000);
   } else {
-    image.src = "https://stopwatch1-liard.vercel.appimages/start1.png";
+    image.src = "https://stopwatch1-liard.vercel.app/images/start1.png";
     clearInterval(milisecondsSayac);
     clearInterval(secondSayac);
   }
