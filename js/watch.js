@@ -60,7 +60,7 @@ function reset() {
   second = 0;
   minutes = 0;
 
-  image.src = "../images/start1.png";
+  image.src = "https://stopwatch1-liard.vercel.app/images/start1.png";
 
   pressDisplay();
 }
