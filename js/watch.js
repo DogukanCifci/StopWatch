@@ -15,8 +15,8 @@ let minutes = 0;
 image.addEventListener("click", () => control());
 
 function control() {
-  if (image.src == "http://127.0.0.1:5500/images/start1.png") {
-    image.src = "http://127.0.0.1:5500/images/pause.png";
+  if (image.src == "https://stopwatch1-liard.vercel.app/images/start1.png") {
+    image.src = "https://stopwatch1-liard.vercel.app/images/pause.png";
     milisecondsSayac = setInterval(() => {
       miliseconds++;
       pressDisplay(milisecondsSayac);
@@ -26,7 +26,7 @@ function control() {
       pressDisplay(secondSayac);
     }, 1000);
   } else {
-    image.src = "http://127.0.0.1:5500/images/start1.png";
+    image.src = "https://stopwatch1-liard.vercel.appimages/start1.png";
     clearInterval(milisecondsSayac);
     clearInterval(secondSayac);
   }
